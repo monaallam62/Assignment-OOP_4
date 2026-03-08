@@ -71,7 +71,11 @@
             //Static Bibding:The method call is resolved at compile time it Happens (method overloading - Static methods - Method hiding (new keyword) - Private methods)
             //Dynamic Binding:The method call is resolved at runtime based on the actual object it happens (Virtual methods,method overriding,Interface calls)
             #endregion
-
+            #region Question 2
+            //Q2 :  What is the difference between method overloading and method overriding?
+            //Method Overloading: Same method name, different parameter lists within the same class (Resolved at compile time,Method signature must differ,Zero performance cost — direct call, no vtable)
+            //Method Overriding:Derived class overrides a virtual method from the base class using the override keyword (Resolved at run time)
+            #endregion
         }
     }
 }
