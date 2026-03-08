@@ -76,6 +76,12 @@
             //Method Overloading: Same method name, different parameter lists within the same class (Resolved at compile time,Method signature must differ,Zero performance cost — direct call, no vtable)
             //Method Overriding:Derived class overrides a virtual method from the base class using the override keyword (Resolved at run time)
             #endregion
+            #region Question 3
+            //Q3 : What keywords are used for Method Overriding? What does each one mean ?
+            //Virtual Override
+            //virtual: Used in the base class to allow a method to be overridden in a derived class
+            //override: Used in the derived class to provide a new implementation of the inherited method and base used in the derived class to call the original method from the base class
+            #endregion
         }
     }
 }
