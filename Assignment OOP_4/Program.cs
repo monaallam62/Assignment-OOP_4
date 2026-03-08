@@ -66,6 +66,12 @@
             //        Console.WriteLine("Payment Failed , Insufficient Balance");
 
             #endregion
+            #region Question 1
+            //Q1: What is the difference between static binding and dynamic binding? When does each one happen ?
+            //Static Bibding:The method call is resolved at compile time it Happens (method overloading - Static methods - Method hiding (new keyword) - Private methods)
+            //Dynamic Binding:The method call is resolved at runtime based on the actual object it happens (Virtual methods,method overriding,Interface calls)
+            #endregion
+
         }
     }
 }
