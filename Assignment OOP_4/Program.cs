@@ -1,4 +1,8 @@
-﻿namespace Assignment_OOP_4
+﻿using Assignment_OOP_4.Enum;
+using Assignment_OOP_4.Methods;
+using static Assignment_OOP_4.Methods.Ticket;
+
+namespace Assignment_OOP_4
 {
     #region Practise Task
     //public class PaymentMethod
@@ -82,6 +86,33 @@
             //virtual: Used in the base class to allow a method to be overridden in a derived class
             //override: Used in the derived class to provide a new implementation of the inherited method and base used in the derived class to call the original method from the base class
             #endregion
+            #region Question 4
+            Cinema cinema = new Cinema("VOX");
+
+            cinema.OpenCinema();
+
+            SeatLocation seat = new SeatLocation(TypeOfTicket.A, 5);
+
+            StandardTicket t1 = new StandardTicket("Inception", 150m, seat);
+            VIPTicket t2 = new VIPTicket("Avengers", 200m, true);
+            IMAXTicket t3 = new IMAXTicket("Dune", 180m, false);
+
+            Console.WriteLine("\n========== SetPrice Test ==========");
+
+            t1.SetPrice(150m);
+            t1.SetPrice(100m, 1.5m);
+
+            cinema.AddTicket(t1);
+            cinema.AddTicket(t2);
+            cinema.AddTicket(t3);
+
+            cinema.PrintAllTickets();
+
+            Cinema.ProcessTicket(t2);
+
+            cinema.CloseCinema();
+            #endregion
+
         }
     }
 }
