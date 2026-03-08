@@ -87,30 +87,30 @@ namespace Assignment_OOP_4
             //override: Used in the derived class to provide a new implementation of the inherited method and base used in the derived class to call the original method from the base class
             #endregion
             #region Question 4
-            Cinema cinema = new Cinema("VOX");
+            //Cinema cinema = new Cinema("VOX");
 
-            cinema.OpenCinema();
+            //cinema.OpenCinema();
 
-            SeatLocation seat = new SeatLocation(TypeOfTicket.A, 5);
+            //SeatLocation seat = new SeatLocation(TypeOfTicket.A, 5);
 
-            StandardTicket t1 = new StandardTicket("Inception", 150m, seat);
-            VIPTicket t2 = new VIPTicket("Avengers", 200m, true);
-            IMAXTicket t3 = new IMAXTicket("Dune", 180m, false);
+            //StandardTicket t1 = new StandardTicket("Inception", 150m, seat);
+            //VIPTicket t2 = new VIPTicket("Avengers", 200m, true);
+            //IMAXTicket t3 = new IMAXTicket("Dune", 180m, false);
 
-            Console.WriteLine("\n========== SetPrice Test ==========");
+            //Console.WriteLine("\n========== SetPrice Test ==========");
 
-            t1.SetPrice(150m);
-            t1.SetPrice(100m, 1.5m);
+            //t1.SetPrice(150m);
+            //t1.SetPrice(100m, 1.5m);
 
-            cinema.AddTicket(t1);
-            cinema.AddTicket(t2);
-            cinema.AddTicket(t3);
+            //cinema.AddTicket(t1);
+            //cinema.AddTicket(t2);
+            //cinema.AddTicket(t3);
 
-            cinema.PrintAllTickets();
+            //cinema.PrintAllTickets();
 
-            Cinema.ProcessTicket(t2);
+            //Cinema.ProcessTicket(t2);
 
-            cinema.CloseCinema();
+            //cinema.CloseCinema();
             #endregion
 
         }
